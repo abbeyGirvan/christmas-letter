@@ -1,3 +1,38 @@
 @import "config";
 @import "menu";
 
+@include media-md {
+  .nav {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px minmax(auto, 1100px);
+    height: auto;
+
+    &__toggle {
+      display: none;
+    }
+    &__toggle--label {
+      display: none;
+    }
+  }
+
+  nav {
+    position: initial;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      li a {
+        border-bottom: none;
+      }
+    }
+  }
+
+  nav::after,
+  nav ul li:last-of-type::before {
+    display: none;
+    padding: initial;
+  }
+}
