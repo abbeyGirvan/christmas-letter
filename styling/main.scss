@@ -1,6 +1,10 @@
 @import "config";
 @import "menu";
 
+
+
+
+/* ----- MEDIA QUERIES ----- */
 @include media-md {
   .nav {
     display: grid;
