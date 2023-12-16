@@ -1,113 +1,109 @@
-.logo {
-    max-width: 50px;
+.nav {
+  position: sticky; /*  ** note the menu will not be sticky until we add more page content */
+  top: 0;
+  z-index: 99;
+  height: 48px;
+  width: 100%;
+  background-color: rgba($dark-green, 0.9);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__toggle {
+    display: none;
   }
-  
-  .nav {
-    position: sticky; /*  ** note the menu will not be sticky until we add more page content */
-    top: 0;
-    z-index: 99;
-    height: 48px;
-    width: 100%;
-    background-color: rgba($dark-green, 0.9);
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    &__toggle {
-      display: none;
-    }
-  
-    &__toggle--label {
-      position: relative;
-      padding: 0.25rem;
-      width: 2rem;
-      height: 1.25rem;
-      height: 2rem;
-  
-      & > span,
-      & > span::before,
-      & > span::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0.75rem;
-        height: 0.125rem;
-        width: 1.75rem;
-        opacity: 1;
-        background: $cream;
-        transition: 0.14s ease-in-out;
-      }
-      & > span::before {
-        top: -0.5rem;
-      }
-      & > span::after {
-        top: 0.5rem;
-      }
-    }
-  }
-  
-  #navToggle:checked {
-    & ~ label > span {
-      width: 0;
-      background: rgba($cream, 0);
-  
-      &::before {
-        transform: rotateZ(45deg);
-        top: 0;
-      }
-  
-      &::after {
-        transform: rotateZ(-45deg);
-        top: 0;
-      }
-    }
-    & ~ nav {
-      left: 0;
-    }
-  }
-  
-  nav {
-    position: absolute;
-    z-index: -1;
-    top: 3rem;
-    left: -110%;
-    width: 100%;
-    transition: 0.22s ease-in-out;
-  
-    &::after {
+
+  &__toggle--label {
+    position: relative;
+    padding: 0.25rem;
+    width: 2rem;
+    height: 1.25rem;
+    height: 2rem;
+
+    & > span,
+    & > span::before,
+    & > span::after {
       content: "";
+      display: block;
       position: absolute;
-      top: 0;
-      z-index: -1;
-      height: 100vh;
-      width: 100vw;
-      background-color: $dark-green;
-      background-size: cover;
+      top: 0.75rem;
+      height: 0.125rem;
+      width: 1.75rem;
+      opacity: 1;
+      background: $cream;
+      transition: 0.14s ease-in-out;
     }
-  
-    ul {
-      list-style-type: none;
-  
-      li:last-of-type::before {
-        content: "";
-        display: block;
-        padding: 0.5rem;
-      }
-  
-      li a {
-        display: inline-block;
-        text-decoration: none;
-        width: 100%;
-        padding: 0.75rem 1rem;
+    & > span::before {
+      top: -0.5rem;
+    }
+    & > span::after {
+      top: 0.5rem;
+    }
+  }
+}
+
+#navToggle:checked {
+  & ~ label > span {
+    width: 0;
+    background: rgba($cream, 0);
+
+    &::before {
+      transform: rotateZ(45deg);
+      top: 0;
+    }
+
+    &::after {
+      transform: rotateZ(-45deg);
+      top: 0;
+    }
+  }
+  & ~ nav {
+    left: 0;
+  }
+}
+
+nav {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: -110%;
+  width: 100%;
+  transition: 0.22s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color: $dark-green;
+    background-size: cover;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li:last-of-type::before {
+      content: "";
+      display: block;
+      padding: 0.5rem;
+    }
+
+    li a {
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      color: $cream;
+      border-bottom: solid 1px rgba($cream, 0.5);
+      transition: 0.14s ease-in-out;
+
+      &:hover {
         color: $cream;
-        border-bottom: solid 1px rgba($cream, 0.5);
-        transition: 0.14s ease-in-out;
-  
-        &:hover {
-          color: $cream;
-          background: $dark-red;
-        }
+        background: $dark-red;
       }
     }
   }
+}

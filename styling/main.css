@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.logo {
-  max-width: 50px;
-}
-
 .nav {
   position: sticky; /*  ** note the menu will not be sticky until we add more page content */
   top: 0;
