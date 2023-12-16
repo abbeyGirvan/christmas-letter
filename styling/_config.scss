@@ -2,3 +2,10 @@ $primary: #000;
 $secondary: #f4f44b;
 $accent: #3245ab;
 $text: #fafafa;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
