@@ -12,6 +12,10 @@ body{
     padding: 60px 0;
 }
 
+.general {
+    height: 100vh;
+}
+
 /* ----- MEDIA QUERIES ----- */
 @include media-md {
   .nav {

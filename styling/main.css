@@ -115,6 +115,10 @@ body {
   padding: 60px 0;
 }
 
+.general {
+  height: 100vh;
+}
+
 /* ----- MEDIA QUERIES ----- */
 @media screen and (min-width: 750px) {
   .nav {
