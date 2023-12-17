@@ -14,8 +14,24 @@ body{
 
 .general {
     height: 100vh;
+    background-image: url(../images/annie-spratt-unsplash-red-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $cream;
 }
 
+.abbey {
+    background-color: $dark-green;
+}
+.char {
+    background-color: $light-red;
+}
+.chris {
+    background-color: $dark-green;
+}
+.scott {
+    background-color: $light-red;
+}
 /* ----- MEDIA QUERIES ----- */
 @include media-md {
   .nav {

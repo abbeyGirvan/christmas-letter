@@ -117,6 +117,26 @@ body {
 
 .general {
   height: 100vh;
+  background-image: url(../images/annie-spratt-unsplash-red-texture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f2ecdf;
+}
+
+.abbey {
+  background-color: #006f57;
+}
+
+.char {
+  background-color: #cd1624;
+}
+
+.chris {
+  background-color: #006f57;
+}
+
+.scott {
+  background-color: #cd1624;
 }
 
 /* ----- MEDIA QUERIES ----- */
