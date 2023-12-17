@@ -100,7 +100,7 @@ nav ul li a {
   transition: 0.14s ease-in-out;
 }
 nav ul li a:hover {
-  color: #f2ecdf;
+  color: whitesmoke;
   background: #bb010b;
 }
 
