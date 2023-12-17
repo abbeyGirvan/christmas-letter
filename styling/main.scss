@@ -1,8 +1,16 @@
 @import "config";
 @import "menu";
 
+body{
+    font-size: 1rem;
+}
 
-
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 /* ----- MEDIA QUERIES ----- */
 @include media-md {
